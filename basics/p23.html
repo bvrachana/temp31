@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Datatype Conversations</h3>
+    <script>
+        var x = "123.345";
+        var y = '12345.6710578654';
+
+     console.log(`type of x =`, typeof x);
+     console.log(`type of y =`, typeof y);
+
+     var a = Number(x); /* convert to any type into number */
+     document.write(`<h3> Number = ${ a }</h3>`);
+
+       console.log(`type of a =`, typeof a);
+ 
+       var a1 = parseInt(x); //int values (whole number)
+       document.write(`<h3> int = ${ a1 }</h3>`);
+       console.log(`type of a1=`,typeof a1);
+
+       var a2 = parseFloat(x); //capture decimals 123 --> 123.8
+       var a3 = parseFloat(y);
+
+       document.write(`<h3> float = ${ a2 }</h3>`);
+       document.write(`<h3> float = ${ a3.toFixed(3) }</h3>`); // limit decimal places toFixed(num) -> round of decimals
+    </script>
+</body>
+</html>

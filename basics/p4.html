@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        /* 
+        1. arithmetic + - * / %(modulus-{remainder})
+        2. logical  &&(and operator) ||(or) !(not)
+        3. relational  >, <, >=, <=, ==(equal to), ===(strictly equal to)
+        4. assignment =, +=, -=, *=, /=, %=  (a*=10 => a = a*10)
+        5. inc/dec
+             pre   ++i --i
+             post  i++ i--
+        6. ternary condition ? true : false
+        7. misc  , . '' "" {} [] () ^ $ # @ / \ |;   
+        */
+
+
+        var  x = 123;
+        var y = 34;
+
+
+
+        var a= 4567;
+        var b= "4567";
+        var c= 4534;
+
+        document.write(`<h1> sum = ${ x + y } </h1>`);
+        document.write(`<h1> sub = ${ x - y } </h1>`);
+        document.write(`<h1> mult = ${ x * y } </h1>`);
+        document.write(`<h1> mod = ${ x % y } </h1>`);
+        document.write(`<h1> div = ${ x / y } </h1>`);
+
+           /* a and b
+               marks < 100 && marks >= 70 =>distinction
+               marks < 70 && marks >= 60 =>first class
+               marks < 60 && marks >= 35 =>second class  (and if both conditions satisfied  or=> one condition satisfied)
+               marks === 35 pass
+               marks < 35 fail
+               a or b
+           !a
+           */
+           
+           document.write(`<h1> a == b(value) ${a == b} </h1>`);
+           document.write(`<h1> a = ${a} </h1>`);
+           document.write(`<h1> a == b(value + datatype) ${a == b} </h1>`);
+           document.write(`<h1> a == c(value + datatype) ${a == c} </h1>`);
+
+
+
+</script>
+</body>
+</html>
